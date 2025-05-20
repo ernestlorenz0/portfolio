@@ -1,0 +1,61 @@
+<section id="contact" class="max-w-7xl mx-auto px-6 py-16">
+  <h2 class="text-3xl font-bold text-center mb-2">Connect With Me</h2>
+  <div class="w-24 h-1 bg-indigo-400 mx-auto mb-6"></div>
+  <p class="text-center mb-10 text-lg text-gray-300">Have a project in mind or just want to say hello? Feel free to reach out!</p>
+  <div class="grid md:grid-cols-2 gap-8">
+    <div>
+      <h4 class="font-bold mb-4">Contact Information</h4>
+      <ul class="mb-6 space-y-3">
+        <li class="flex items-center gap-3">
+          <svg class="h-5 w-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+          <span>Email:</span> ernestjamesonlorenzo@gmail.com
+        </li>
+        <li class="flex items-center gap-3">
+          <svg class="h-5 w-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+          <span>Location:</span> Dasmarinas, Cavite
+        </li>
+        <li class="flex items-center gap-3">
+          <svg class="h-5 w-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+          </svg>
+          <span>Phone:</span> +63 993 526 ****
+        </li>
+      </ul>
+      <h4 class="font-bold mb-2">Follow Me</h4>
+      <div class="flex gap-4">
+        <a href="https://www.facebook.com/yajeeelorenzo24/" target="_blank" class="hover:opacity-75 transition">
+          <img src="img/socials/fb.png" alt="Facebook" class="w-8 h-8">
+        </a>
+        <a href="https://www.instagram.com/ernestjmsn/" target="_blank" class="hover:opacity-75 transition">
+          <img src="img/socials/ig.png" alt="Instagram" class="w-8 h-8">
+        </a>
+        <a href="https://github.com/ernestlorenz0" target="_blank" class="hover:opacity-75 transition">
+          <img src="img/socials/github.png" alt="GitHub" class="w-8 h-8">
+        </a>
+        <a href="https://linkedin.com/in/ernest-jameson-lorenzo" target="_blank" class="hover:opacity-75 transition">
+          <img src="img/socials/linkedin.png" alt="LinkedIn" class="w-8 h-8">
+        </a>
+      </div>
+    </div>
+    <form id="contact-form" class="bg-gray-700 rounded-xl p-8 shadow space-y-4">
+      <h4 class="font-bold mb-4">Send Me a Message</h4>
+      <input type="text" name="user_name" placeholder="Your Name" required class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-400"/>
+      <input type="email" name="user_email" placeholder="Your Email" required class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-400"/>
+      <input type="text" name="subject" placeholder="Subject" class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-400"/>
+      <textarea name="message" placeholder="Your message here..." required class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
+      <div id="form-status" class="text-center text-sm text-red-400 hidden"></div>
+      <button type="submit" class="bg-indigo-500 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-indigo-600 transition w-full">Send Message</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function() {
+        emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+      })();
+    </script>
+  </div>
+</section>

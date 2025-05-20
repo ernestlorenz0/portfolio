@@ -1,0 +1,35 @@
+/* Background animation for about section */
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.about-section {
+  background: linear-gradient(45deg, #1a1a1a, #2d2d2d, #404040, #2d2d2d, #1a1a1a);
+  background-size: 400% 400%;
+  animation: gradient-move 20s ease infinite;
+  position: relative;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8));
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+}

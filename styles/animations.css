@@ -1,0 +1,203 @@
+/* Slower shake animation for name with upward movement */
+@keyframes name-shake {
+  0%, 100% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+  15%, 45%, 75% {
+    transform: translateX(-15px) translateY(-10px) rotate(-3deg) scale(1.02);
+  }
+  30%, 60%, 90% {
+    transform: translateX(15px) translateY(-10px) rotate(3deg) scale(0.98);
+  }
+}
+
+/* Color glow animation for profile picture */
+@keyframes color-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.8));
+  }
+  25% {
+    filter: drop-shadow(0 0 15px rgba(255,0,0,0.8));
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(255,255,0,0.8));
+  }
+  75% {
+    filter: drop-shadow(0 0 15px rgba(0,255,0,0.8));
+  }
+}
+
+/* Button hover animation */
+@keyframes button-glow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,255,255,0.8);
+  }
+}
+
+/* Project card hover effect */
+@keyframes project-glow {
+  0%, 100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+  }
+}
+
+/* Footer navigation hover */
+@keyframes footer-glow {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.5));
+  }
+  50% {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.8));
+  }
+}
+
+/* Hover shake animation for navigation items */
+@keyframes nav-hover-shake {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(0) translateY(-10px);
+  }
+}
+
+/* Card hover animation */
+@keyframes card-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Button hover animation */
+@keyframes button-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Skill card hover animation */
+@keyframes skill-glow {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 rgba(255,255,255,0.2));
+  }
+  50% {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
+  }
+}
+
+/* Apply animations */
+.hero-name {
+  animation: name-shake 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile-shake {
+  animation: profile-dance 3.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Navigation animations */
+.nav-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  animation: nav-hover-shake 0.5s infinite ease-in-out;
+}
+
+/* Button animations */
+.button-shake {
+  transition: all 0.3s ease-in-out;
+}
+
+.button-shake:hover {
+  animation: button-pulse 0.5s infinite ease-in-out;
+  transform: scale(1.05);
+}
+
+/* Card animations */
+.card-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+  animation: card-float 0.5s infinite ease-in-out;
+  transform: translateY(-10px);
+}
+
+/* Skill animations */
+.skill-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+  animation: skill-glow 1.5s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float:hover {
+  animation: float 3s ease-in-out infinite;
+  transform: perspective(1000px) rotateY(5deg) rotateX(5deg);
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.5), 
+              -20px -20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* 3D card effect */
+.animate-float {
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-out;
+  transform: perspective(1000px) rotateY(0) rotateX(0);
+}
+
+/* Shine effect on hover */
+@keyframes shine {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* 3D shadow effect */
+.three-d-shadow {
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4),
+              -10px -10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.three-d-shadow:hover {
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.5),
+              -15px -15px 40px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+/* Mobile menu button animation */
+.menu-button {
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-button:hover {
+  animation: nav-hover-shake 0.5s infinite ease-in-out;
+}
